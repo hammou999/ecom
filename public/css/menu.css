@@ -95,12 +95,14 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 1000px) {
-    nav {
-        padding: 0 40px 0 50px;
-    }
+
 }
 
 @media (max-width: 920px) {
+    nav {
+        padding: 0 40px 0 50px;
+    }
+
     nav .menu-btn i {
         display: block;
     }
@@ -155,6 +157,10 @@ input[type="checkbox"] {
 @media (max-width: 600px) {
     .cont{
         margin: 0 15px 0 15px;
+    }
+
+    nav {
+        padding: 0 15px 0 15px;
     }
 }
 
