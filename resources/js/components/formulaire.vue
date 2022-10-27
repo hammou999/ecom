@@ -66,7 +66,7 @@
             <br>
 
             <div class="roww">
-                <span class="total_pay">إجمالي التكلفة: {{total_pay}},00 دج</span>
+                <span class="total_pay">إجمالي التكلفة (مع التوصيل): {{total_pay}},00 دج</span>
             </div>
             <div id="s" ref="s"></div>
             <div class="roww" v-if="submit">
@@ -168,13 +168,15 @@
                 if (!/^([^ ]{2,12}[ ]){1,3}[^ ]{2,12}$/.test(this.fullname)) {
                     this.$refs.fname.scrollIntoView({behavior: 'smooth', block: "center", inline: "nearest"});
                     setTimeout(() => this.$refs.fname.focus(), 500);
-                    if (this.submit)
-                        this.errors = "يرجى إدخال الإسم واللقب بشكل صحيح"
+                    this.errors = "يرجى إدخال الإسم واللقب بشكل صحيح"
                 } else if (!/^[0][567][0-9]{8}$/.test(this.phone)) {
                     this.$refs.phone.scrollIntoView({behavior: 'smooth'});
                     setTimeout(() => this.$refs.phone.focus(), 500);
-                    if (this.submit)
                         this.errors = "يرجى التأكد من رقم هاتف المدخل "
+                } else if (!/^.{4,30}$/.test(this.adresse)) {
+                    this.$refs.adresse.scrollIntoView({behavior: 'smooth'});
+                    setTimeout(() => this.$refs.adresse.focus(), 500);
+                    this.errors = "يرجى إدخال عنوان صحيح"
                 } else if (this.wilaya.length == 0) {
                     this.$refs.wilaya.scrollIntoView({behavior: 'smooth'});
                     setTimeout(() => this.$refs.wilaya.focus(), 500);
@@ -182,19 +184,9 @@
                 } else if (this.commune.length == 0) {
                     this.$refs.commune.scrollIntoView({behavior: 'smooth'});
                     setTimeout(() => this.$refs.commune.focus(), 500);
-                    if (this.submit)
                         this.errors = "يرجى إختيار البلدية"
-                } else if (!/^.{4,30}$/.test(this.adresse)) {
-                    this.$refs.adresse.scrollIntoView({behavior: 'smooth'});
-                    setTimeout(() => this.$refs.adresse.focus(), 500);
-                    if (this.submit)
-                        this.errors = "يرجى إدخال عنوان صحيح"
-                } else if (this.remarque.length > 150) {
-                    this.$refs.remarque.scrollIntoView({behavior: 'smooth'});
-                    setTimeout(() => this.$refs.remarque.focus(), 500);
-                    if (this.submit)
-                        this.errors = "يجب أن لا تتجاوز الملاحظة 150 حرف"
-                } else {
+                }
+                else {
                     this.load = true;
                     axios.post('/saveOrder', {
                         product_id: this.product.id,
@@ -349,6 +341,13 @@
     .valid {
         background-color: #40ff7b;
         top: 50%;
+    }
+
+    @media (max-width: 600px) {
+        .error {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 
     .body {
