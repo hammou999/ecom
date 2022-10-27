@@ -313,7 +313,17 @@ product-thumbnail, product-thumbnail:active, product-thumbnail:hover {
 /*--------------------------------------------------------*/
 
 
-
+.item-list{
+    background-image: url(/picture/icon/checked.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    text-align: right;
+    padding-right: 35px;
+    font-size: 18px;
+    font-weight: bolder;
+}
 
 
 

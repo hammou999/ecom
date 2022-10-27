@@ -3,9 +3,9 @@
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
 @endsection
 @section('header')
-    <h2>
+    <h1>
         الرئيسية
-    </h2>
+    </h1>
 @endsection
 
 @section('content')

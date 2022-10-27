@@ -65,9 +65,13 @@
 
     <div class="app-heading">
         <h3 class="heading-primary">وصف المنتج</h3>
-        <p class="heading-description"></p>
+        <div class="item-list">
+            مقبس لمبة E27 لاسلكي للتحكم عن بعد
+        </div>
+        <div class="item-list">
+            مقبس لمبة E27 لاسلكي للتحكم عن بعد
+        </div>
     </div>
-
 
     <div class="app-heading">
         <h3 class="heading-primary">مميزات المنتج</h3>

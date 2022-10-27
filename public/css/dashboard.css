@@ -1,3 +1,15 @@
+.cont{
+    width: 100%;
+}
+
+.header h1{
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
 .table-orders{
     border-spacing: 1px;
     border-collapse: collapse;
@@ -7,7 +19,6 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    overflow: visible;
 }
 .table-head{
     height: 70px;

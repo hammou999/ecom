@@ -18,58 +18,51 @@
                 </div>
                 <div class="coll">
                     <input type="text" id="phone" ref="phone" v-model="phone"
-                           placeholder="يرجى التأكد من الرقم المكتوب">
+                           placeholder="يرجى إدخال رقم هاتف صالح">
                 </div>
             </div>
 
             <div class="roww">
                 <div class="coll">
-                    <label for="wilaya">الولاية:<span class="total_pay">*</span></label>
-                </div>
-                <div class="coll">
-                    <select id="wilaya" ref="wilaya" v-model="wilaya" @change="selectWilaya($event)">
-                        <option value="">-- Wilaya --</option>
-                        <option v-for="(wilaya, index) in all_wilaya" :value="wilaya.wilaya_code">
-                            {{ wilaya.wilaya_code}} {{ wilaya.wilaya_name}} - {{ wilaya.wilaya_name_ascii}}
-                        </option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="roww">
-                <div class="coll">
-                    <label for="commune">البلدية:<span class="total_pay">*</span></label>
-                </div>
-                <div class="coll">
-                    <select id="commune" ref="commune" v-model="commune"
-                            @change="selectCommune($event.target.selectedIndex)">
-                        <option value="">-- Commune --</option>
-                        <option v-for="(commune, index) in all_commune" :value="commune.id">
-                            {{ commune.commune_name}} - {{ commune.commune_name_ascii}}
-                        </option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="roww">
-                <div class="coll">
-                    <label  for="adresse">العنوان الكامل:<span class="total_pay">*</span></label>
+                    <label for="adresse">العنوان الكامل:<span class="total_pay">*</span></label>
                 </div>
                 <div class="coll">
                     <input type="text" id="adresse" ref="adresse" v-model="adresse"
                            placeholder="يرجى إدخال عنوان التوصيل">
                 </div>
             </div>
-
-            <div class="roww">
-                <div class="coll">
-                    <label for="remarque">ملاحظات جانبية:</label>
+            <div class="coll2">
+                <div class="roww1">
+                    <div class="coll">
+                        <label for="wilaya">الولاية:<span class="total_pay">*</span></label>
+                    </div>
+                    <div class="coll">
+                        <select id="wilaya" ref="wilaya" v-model="wilaya" @change="selectWilaya($event)">
+                            <option value="">-- Wilaya --</option>
+                            <option v-for="(wilaya, index) in all_wilaya" :value="wilaya.wilaya_code">
+                                {{ wilaya.wilaya_code}} {{ wilaya.wilaya_name}} - {{ wilaya.wilaya_name_ascii}}
+                            </option>
+                        </select>
+                    </div>
                 </div>
-                <div class="coll">
-                    <textarea id="remarque" ref="remarque" v-model="remarque" placeholder="Write something.."
-                              style="height:200px"></textarea>
+
+                <div class="roww1">
+                    <div class="coll">
+                        <label for="commune">البلدية:<span class="total_pay">*</span></label>
+                    </div>
+                    <div class="coll">
+                        <select id="commune" ref="commune" v-model="commune"
+                                @change="selectCommune($event.target.selectedIndex)">
+                            <option value="">-- Commune --</option>
+                            <option v-for="(commune, index) in all_commune" :value="commune.id">
+                                {{ commune.commune_name}} - {{ commune.commune_name_ascii}}
+                            </option>
+                        </select>
+                    </div>
                 </div>
             </div>
+
+
             <br>
 
             <div class="roww">
@@ -77,9 +70,9 @@
             </div>
             <div id="s" ref="s"></div>
             <div class="roww" v-if="submit">
-                <input  type="submit" value="تأكيد الطلب">
+                <input type="submit" value="تأكيد الطلب">
             </div>
-            <div class="row1" v-if="!submit" >
+            <div class="row1" v-if="!submit">
                 <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                 <a href="#"><i class="fab fa-whatsapp whatsapp-bg"></i></a>
                 <input type="submit" value="إضغط هنا لتقديم طلبك">
@@ -127,7 +120,7 @@
                 remarque: "",
                 load: false,
                 valid: false,
-                submit:false,
+                submit: false,
             };
         },
 
@@ -173,14 +166,14 @@
 
             register() {
                 if (!/^([^ ]{2,12}[ ]){1,3}[^ ]{2,12}$/.test(this.fullname)) {
-                    this.$refs.fname.scrollIntoView({behavior: 'smooth'});
+                    this.$refs.fname.scrollIntoView({behavior: 'smooth', block: "center", inline: "nearest"});
                     setTimeout(() => this.$refs.fname.focus(), 500);
-                    if(this.submit)
+                    if (this.submit)
                         this.errors = "يرجى إدخال الإسم واللقب بشكل صحيح"
                 } else if (!/^[0][567][0-9]{8}$/.test(this.phone)) {
                     this.$refs.phone.scrollIntoView({behavior: 'smooth'});
                     setTimeout(() => this.$refs.phone.focus(), 500);
-                    if(this.submit)
+                    if (this.submit)
                         this.errors = "يرجى التأكد من رقم هاتف المدخل "
                 } else if (this.wilaya.length == 0) {
                     this.$refs.wilaya.scrollIntoView({behavior: 'smooth'});
@@ -189,17 +182,17 @@
                 } else if (this.commune.length == 0) {
                     this.$refs.commune.scrollIntoView({behavior: 'smooth'});
                     setTimeout(() => this.$refs.commune.focus(), 500);
-                    if(this.submit)
+                    if (this.submit)
                         this.errors = "يرجى إختيار البلدية"
                 } else if (!/^.{4,30}$/.test(this.adresse)) {
                     this.$refs.adresse.scrollIntoView({behavior: 'smooth'});
                     setTimeout(() => this.$refs.adresse.focus(), 500);
-                    if(this.submit)
+                    if (this.submit)
                         this.errors = "يرجى إدخال عنوان صحيح"
                 } else if (this.remarque.length > 150) {
                     this.$refs.remarque.scrollIntoView({behavior: 'smooth'});
                     setTimeout(() => this.$refs.remarque.focus(), 500);
-                    if(this.submit)
+                    if (this.submit)
                         this.errors = "يجب أن لا تتجاوز الملاحظة 150 حرف"
                 } else {
                     this.load = true;
@@ -280,14 +273,15 @@
         margin-top: 0;
     }
 
-    .roww,.row1 {
+    .roww, .row1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
     }
-    .row1{
+
+    .row1 {
         position: fixed;
         display: flex;
         width: 100%;
@@ -305,7 +299,7 @@
         padding: 10px 0;
     }
 
-    .row1 input[type=submit]{
+    .row1 input[type=submit] {
         border-radius: 5px;
         width: 300px;
         background-color: red;
@@ -314,7 +308,7 @@
     }
 
     /* Clear floats after the columns */
-    .roww:after,.row1 {
+    .roww:after, .row1 {
         content: "";
         display: table;
         clear: both;
@@ -724,8 +718,6 @@
     }
 
 
-
-
     /* ------------------------------------------------- */
 
     .whatsapp-bg, .facebook-bg {
@@ -740,4 +732,16 @@
         margin-left: 5px;
     }
 
+    #fname,#phone,#wilaya,#commune,#adresse{
+    }
+
+    .coll2 {
+        display: flex;
+
+    }
+
+    .roww1{
+        width: 50%;
+        margin-right: 5px;
+    }
 </style>
