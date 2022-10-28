@@ -166,23 +166,23 @@
 
             register() {
                 if (!/^([^ ]{2,12}[ ]){1,3}[^ ]{2,12}$/.test(this.fullname)) {
-                    this.$refs.fname.scrollIntoView({behavior: 'smooth', block: "center", inline: "nearest"});
+                    this.$refs.fname.scrollIntoView({behavior: 'smooth', block: "start", inline: "nearest"});
                     setTimeout(() => this.$refs.fname.focus(), 500);
                     this.errors = "يرجى إدخال الإسم واللقب بشكل صحيح"
                 } else if (!/^[0][567][0-9]{8}$/.test(this.phone)) {
-                    this.$refs.phone.scrollIntoView({behavior: 'smooth'});
+                    this.$refs.fname.scrollIntoView({behavior: 'smooth', block: "start", inline: "nearest"});
                     setTimeout(() => this.$refs.phone.focus(), 500);
                         this.errors = "يرجى التأكد من رقم هاتف المدخل "
                 } else if (!/^.{4,30}$/.test(this.adresse)) {
-                    this.$refs.adresse.scrollIntoView({behavior: 'smooth'});
+                    this.$refs.fname.scrollIntoView({behavior: 'smooth', block: "start", inline: "nearest"});
                     setTimeout(() => this.$refs.adresse.focus(), 500);
                     this.errors = "يرجى إدخال عنوان صحيح"
                 } else if (this.wilaya.length == 0) {
-                    this.$refs.wilaya.scrollIntoView({behavior: 'smooth'});
+                    this.$refs.fname.scrollIntoView({behavior: 'smooth', block: "start", inline: "nearest"});
                     setTimeout(() => this.$refs.wilaya.focus(), 500);
                     this.errors = "يرجى إختيار الولاية"
                 } else if (this.commune.length == 0) {
-                    this.$refs.commune.scrollIntoView({behavior: 'smooth'});
+                    this.$refs.fname.scrollIntoView({behavior: 'smooth', block: "start", inline: "nearest"});
                     setTimeout(() => this.$refs.commune.focus(), 500);
                         this.errors = "يرجى إختيار البلدية"
                 }
@@ -732,6 +732,7 @@
     }
 
     #fname,#phone,#wilaya,#commune,#adresse{
+        scroll-margin-top: 170px;
     }
 
     .coll2 {
