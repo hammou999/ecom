@@ -141,8 +141,9 @@
         <formulaire :product="{'id':'1','prix' : '1000'}">
 
         </formulaire>
-
     </div>
+
+
     <div class="app-heading">
         <h3 class="heading-primary">منتجات سوف تعجبك</h3>
     </div>

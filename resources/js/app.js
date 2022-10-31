@@ -1,10 +1,6 @@
-require('./bootstrap');
+window.axios = require('axios');
 
-import Alpine from 'alpinejs';
 
-window.Alpine = Alpine;
-
-Alpine.start();
 //let notification = new Audio(require(''))
 //window.notification = new Audio(require(''))
 import { createApp } from 'vue'
