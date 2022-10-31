@@ -311,7 +311,7 @@ product-thumbnail, product-thumbnail:active, product-thumbnail:hover {
 
 @media (max-width: 600px) {
     .cont{
-        margin: 0 15px 0 15px;
+        margin: 58px 15px 0 15px;
     }
 }
 
@@ -335,7 +335,7 @@ product-thumbnail, product-thumbnail:active, product-thumbnail:hover {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 30px;
+    width: 36px;
     height: 30px;
 }
 

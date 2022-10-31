@@ -294,6 +294,7 @@
     .row1 input[type=submit] {
         border-radius: 5px;
         width: 300px;
+        height: 35px;
         background-color: red;
         font-size: 14px;
         padding: 8px;
@@ -307,6 +308,7 @@
     }
 
     .total_pay {
+        text-align: center;
         margin-bottom: 20px;
         font-size: 16pt;
         font-weight: bold;
