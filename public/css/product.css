@@ -331,8 +331,8 @@ product-thumbnail, product-thumbnail:active, product-thumbnail:hover {
 }
 
 .item-list img{
-    width: 30px;
-    height: 30px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 
