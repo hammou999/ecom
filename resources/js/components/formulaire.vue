@@ -293,7 +293,8 @@
 
     .row1 input[type=submit] {
         border-radius: 5px;
-        width: 300px;
+        max-width: 400px;
+        width: 70%;
         height: 35px;
         background-color: red;
         font-size: 14px;

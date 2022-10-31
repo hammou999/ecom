@@ -7,6 +7,7 @@
 
 @section('css-file')
     <link rel="stylesheet" type="text/css" href="{{asset('css/product.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -92,41 +93,41 @@
     <div class="app-heading">
         <h3 class="heading-primary">وصف المنتج</h3>
         <div class="item-list">
-            <div></div>
+            <img src="{{asset('/picture/icon/checked.png')}}" />
             <p>x1 حامل مصباح.</p>
         </div>
         <div class="item-list">
-            <div></div>
+            <img src="{{asset('/picture/icon/checked.png')}}" />
             <p>x1 جهاز تحكم عن بعد.</p>
 
         </div>
         <div class="item-list">
-            <div></div>
+            <img src="{{asset('/picture/icon/checked.png')}}" />
             <p>x1 حامل جهاز التحكم.</p>
         </div>
     </div>
     <div class="app-heading">
         <h3 class="heading-primary">مميزات المنتج</h3>
         <div class="item-list">
-            <div></div>
+            <img src="{{asset('/picture/icon/checked.png')}}" />
             <p>سهل التركيب.</p>
         </div>
         <div class="item-list">
-            <div></div>
+            <img src="{{asset('/picture/icon/checked.png')}}" />
             <p>مادة عالية الجودة تضمن عمر خدمة طويل.</p>
         </div>
         <div class="item-list">
-            <div></div>
+            <img src="{{asset('/picture/icon/checked.png')}}" />
             <p>تساعد كبار السن والعاجزين من التحكم في مصباح الغرفة من مكانهم.</p>
 
         </div>
         <div class="item-list">
-            <div></div>
+            <img src="{{asset('/picture/icon/checked.png')}}" />
             <p>إطفاء وإشعال المصباح من جهاز التحكم عن بعد 10 أمتار.</p>
 
         </div>
         <div class="item-list">
-            <div></div>
+            <img src="{{asset('/picture/icon/checked.png')}}" />
             <p>مؤقت لإنطفاء المصباح بعد مدة زمنية معينة.</p>
         </div>
     </div>
@@ -141,6 +142,7 @@
 
         </formulaire>
     </div>
+
 
 @endsection
 

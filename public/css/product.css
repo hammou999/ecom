@@ -330,12 +330,8 @@ product-thumbnail, product-thumbnail:active, product-thumbnail:hover {
     font-weight: bolder;
 }
 
-.item-list div{
-    background-image: url(/picture/icon/checked.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 36px;
+.item-list img{
+    width: 30px;
     height: 30px;
 }
 
