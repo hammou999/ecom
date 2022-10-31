@@ -36,32 +36,59 @@
         </div>
     </div>
 
-    <div class="carousel carousel-main" data-flickity='{ "sync": ".carousel-nav", "prevNextButtons": false }'>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
+    <div class="gallery js-flickity"
+         data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell">
+            <a href="product">
+                <img src="{{asset('picture/product/Douille/0.webp')}}" />
+            </a>
+        </div>
+        <div class="gallery-cell">
+            <img src="{{asset('picture/product/Douille/1.jpg')}}" />
+        </div>
+        <div class="gallery-cell">
+            <img src="{{asset('picture/product/Douille/2.jpg')}}" />
+        </div>
+        <div class="gallery-cell">
+            <img src="{{asset('picture/product/Douille/4.webp')}}" />
+        </div>
+        <div class="gallery-cell">
+            <img src="{{asset('picture/product/Douille/5.webp')}}" />
+        </div>
+        <div class="gallery-cell">
+            <img src="{{asset('picture/product/Douille/6.webp')}}" />
+        </div>
+        <div class="gallery-cell">
+            <img src="{{asset('picture/product/Douille/7.jpg')}}" />
+        </div>
     </div>
 
+
     <div class="carousel carousel-nav"
-         data-flickity='{ "asNavFor": ".carousel-main", "contain" : true, "pageDots": false }'>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
+         data-flickity='{ "asNavFor": ".gallery", "contain": true, "pageDots": false }'>
+        <div class="carousel-cell">
+            <img src="{{asset('picture/product/Douille/0.webp')}}" />
+        </div>
+        <div class="carousel-cell">
+            <img src="{{asset('picture/product/Douille/1.jpg')}}" />
+        </div>
+        <div class="carousel-cell">
+            <img src="{{asset('picture/product/Douille/2.jpg')}}" />
+        </div>
+        <div class="carousel-cell">
+            <img src="{{asset('picture/product/Douille/4.webp')}}" />
+        </div>
+        <div class="carousel-cell">
+            <img src="{{asset('picture/product/Douille/5.webp')}}" />
+        </div>
+        <div class="carousel-cell">
+            <img src="{{asset('picture/product/Douille/6.webp')}}" />
+        </div>
+        <div class="carousel-cell">
+            <img src="{{asset('picture/product/Douille/7.jpg')}}" />
+        </div>
     </div>
+
 
     <div class="app-heading">
         <h3 class="heading-primary">وصف المنتج</h3>
@@ -130,6 +157,12 @@
 @section('script')
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-sync@2.0.0/flickity-sync.js"></script>
+    <script src="https://unpkg.com/flickity-as-nav-for@2/as-nav-for.js"></script>
+
     <script src="{{asset('js/app.js')}}"></script>
+    <script>
+
+
+    </script>
 @endsection
 
