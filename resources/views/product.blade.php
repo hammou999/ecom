@@ -109,25 +109,25 @@
     <div class="app-heading">
         <h3 class="heading-primary">مميزات المنتج</h3>
         <div class="item-list">
-            <img src="{{asset('/picture/icon/checked.png')}}" />
+            <img src="{{asset('/picture/icon/checked.png')}}" width="30px" height="30px"/>
             <p>سهل التركيب.</p>
         </div>
         <div class="item-list">
-            <img src="{{asset('/picture/icon/checked.png')}}" />
+            <img src="{{asset('/picture/icon/checked.png')}}" width="30px" height="30px"/>
             <p>مادة عالية الجودة تضمن عمر خدمة طويل.</p>
         </div>
         <div class="item-list">
-            <img src="{{asset('/picture/icon/checked.png')}}" />
+            <img src="{{asset('/picture/icon/checked.png')}}" width="30px" height="30px"/>
             <p>تساعد كبار السن والعاجزين من التحكم في مصباح الغرفة من مكانهم.</p>
 
         </div>
         <div class="item-list">
-            <img src="{{asset('/picture/icon/checked.png')}}" />
+            <img src="{{asset('/picture/icon/checked.png')}}" width="30px" height="30px"/>
             <p>إطفاء وإشعال المصباح من جهاز التحكم عن بعد 10 أمتار.</p>
 
         </div>
         <div class="item-list">
-            <img src="{{asset('/picture/icon/checked.png')}}" />
+            <img src="{{asset('/picture/icon/checked.png')}}" width="30px" height="30px"/>
             <p>مؤقت لإنطفاء المصباح بعد مدة زمنية معينة.</p>
         </div>
     </div>
