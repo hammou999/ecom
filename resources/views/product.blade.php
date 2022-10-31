@@ -23,14 +23,14 @@
 
 @section('content')
     <div class="app-heading">
-        <h3 class="heading-primary">الضوء الخارق</h3>
+        <h3 class="heading-primary">دوي كموند</h3>
         <div class="product-price">
             <span class="currency-value before">
-                <span class="value">4500</span>
+                <span class="value">2900</span>
                 <span class="currency">د.ج.‏</span>
             </span>
             <span class="currency-value after">
-                <span class="value">2700</span>
+                <span class="value">3600</span>
                 <span class="currency">د.ج‏</span>
             </span>
         </div>
@@ -93,16 +93,43 @@
     <div class="app-heading">
         <h3 class="heading-primary">وصف المنتج</h3>
         <div class="item-list">
-            مقبس لمبة E27 لاسلكي للتحكم عن بعد
+            <div></div>
+            <p>x1 حامل مصباح.</p>
         </div>
         <div class="item-list">
-            مقبس لمبة E27 لاسلكي للتحكم عن بعد
+            <div></div>
+            <p>x1 جهاز تحكم عن بعد.</p>
+
+        </div>
+        <div class="item-list">
+            <div></div>
+            <p>x1 حامل جهاز التحكم.</p>
         </div>
     </div>
-
     <div class="app-heading">
         <h3 class="heading-primary">مميزات المنتج</h3>
-        <p class="heading-description">ماذا تنتظر .. قدم طلبك الآن!</p>
+        <div class="item-list">
+            <div></div>
+            <p>سهل التركيب.</p>
+        </div>
+        <div class="item-list">
+            <div></div>
+            <p>مادة عالية الجودة تضمن عمر خدمة طويل.</p>
+        </div>
+        <div class="item-list">
+            <div></div>
+            <p>تساعد كبار السن والعاجزين من التحكم في مصباح الغرفة من مكانهم.</p>
+
+        </div>
+        <div class="item-list">
+            <div></div>
+            <p>إطفاء وإشعال المصباح من جهاز التحكم عن بعد 10 أمتار.</p>
+
+        </div>
+        <div class="item-list">
+            <div></div>
+            <p>مؤقت لإنطفاء المصباح بعد مدة زمنية معينة.</p>
+        </div>
     </div>
 
     <div class="app-heading">
