@@ -142,11 +142,6 @@
         </formulaire>
     </div>
 
-
-    <div class="app-heading">
-        <h3 class="heading-primary">منتجات سوف تعجبك</h3>
-    </div>
-
 @endsection
 
 @section('script')
