@@ -93,16 +93,16 @@
     <div class="app-heading">
         <h3 class="heading-primary">وصف المنتج</h3>
         <div class="item-list">
-            <img src="{{asset('/picture/icon/checked.png')}}" />
+            <img src="{{asset('/picture/icon/checked.png')}}"  width="30px" height="30px"/>
             <p>x1 حامل مصباح.</p>
         </div>
         <div class="item-list">
-            <img src="{{asset('/picture/icon/checked.png')}}" />
+            <img src="{{asset('/picture/icon/checked.png')}}"  width="30px" height="30px"/>
             <p>x1 جهاز تحكم عن بعد.</p>
 
         </div>
         <div class="item-list">
-            <img src="{{asset('/picture/icon/checked.png')}}" />
+            <img src="{{asset('/picture/icon/checked.png')}}"  width="30px" height="30px"/>
             <p>x1 حامل جهاز التحكم.</p>
         </div>
     </div>

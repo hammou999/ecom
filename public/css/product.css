@@ -330,11 +330,6 @@ product-thumbnail, product-thumbnail:active, product-thumbnail:hover {
     font-weight: bolder;
 }
 
-.item-list img{
-    max-width: 30px;
-    max-height: 30px;
-}
-
 
 
 /*--------------------------------------------------------*/
