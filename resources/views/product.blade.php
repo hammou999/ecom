@@ -22,19 +22,28 @@
 @endsection
 
 @section('content')
+    @if ($name)
+        <div class="app-heading1">
+            <img src="{{asset('picture/icon/order-valide.webp')}}"/>
+            <div class="welcom">مرحبا {{$name}}</div>
+            <div class="confirmed">شكرا لثقتك بنا، تم تسجيل طلبك... سنتصل بك قريبا.</div>
+        </div>
+    @endif
+
     <div class="app-heading">
         <h3 class="heading-primary">دوي كموند</h3>
         <div class="product-price">
             <span class="currency-value before">
-                <span class="value">2900</span>
+                <span class="value">3600</span>
                 <span class="currency">د.ج.‏</span>
             </span>
             <span class="currency-value after">
-                <span class="value">3600</span>
+                <span class="value">2900</span>
                 <span class="currency">د.ج‏</span>
             </span>
         </div>
     </div>
+
 
     <div class="gallery js-flickity"
          data-flickity-options='{ "wrapAround": true }'>
@@ -149,8 +158,6 @@
 @section('script')
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-sync@2.0.0/flickity-sync.js"></script>
-    <script src="https://unpkg.com/flickity-as-nav-for@2/as-nav-for.js"></script>
-
     <script src="{{asset('js/app.js')}}"></script>
     <script>
 

@@ -21381,17 +21381,8 @@ __webpack_require__.r(__webpack_exports__);
           adresse: this.adresse,
           remarque: this.remarque
         }).then(function (response) {
-          _this4.fullname = "";
-          _this4.phone = "";
-          _this4.wilaya = "";
-          _this4.commune = "";
-          _this4.adresse = "";
-          _this4.remarque = "";
-          _this4.load = false;
-          _this4.valid = true;
-          setTimeout(function () {
-            return _this4.valid = false;
-          }, 4000);
+          //                       this.load = false;
+          window.location.href = "product?name=" + _this4.fullname;
         });
       }
     }

@@ -35,8 +35,7 @@ class FormulaireController extends Controller
             'remarque' => $request->remarque,
         ]);
 
-        return response()->json($order);
-
+        return view('order-confirmed', ['name' => $request->full_name]);
     }
 
 

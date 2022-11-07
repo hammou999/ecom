@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\FormulaireController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +21,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/product', function () {
-    return view('product');
-})->name('product');
+Route::get('/product', [ProductController::class, 'index'])->name('product');
 
 Route::get('/contact', function () {
     return view('contact');
@@ -30,8 +30,8 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-
 Route::get('/getWilaya', [FormulaireController::class, 'getwilaya'])->name('getWilaya');
+Route::get('/getCommune/{wilaya_code}', [FormulaireController::class, 'getCommune'])->name('getCommune');
 Route::get('/getCommune/{wilaya_code}', [FormulaireController::class, 'getCommune'])->name('getCommune');
 Route::post('/saveOrder', [FormulaireController::class, 'saveOrder'])->name('saveOrder');
 

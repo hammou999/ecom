@@ -196,15 +196,8 @@
                         adresse: this.adresse,
                         remarque: this.remarque
                     }).then((response) => {
-                        this.fullname = "";
-                        this.phone = "";
-                        this.wilaya = "";
-                        this.commune = "";
-                        this.adresse = "";
-                        this.remarque = "";
-                        this.load = false;
-                        this.valid = true;
-                        setTimeout(() => this.valid = false, 4000);
+ //                       this.load = false;
+                        window.location.href = "product?name="+this.fullname;
                     })
                 }
             }
