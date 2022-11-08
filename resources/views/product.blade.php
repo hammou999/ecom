@@ -16,7 +16,7 @@
 @section('header-top')
     <div class="header-call">
         <a href="tel:0656207310" class="animate-charcter">
-            قدم طلبك مباشرة عبر الهاتف: c
+            قدم طلبك مباشرة عبر الهاتف: 0656207310
         </a>
     </div>
 @endsection
