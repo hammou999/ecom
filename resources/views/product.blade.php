@@ -15,8 +15,8 @@
 
 @section('header-top')
     <div class="header-call">
-        <a href="tel:0798872905" class="animate-charcter">
-            قدم طلبك مباشرة عبر الهاتف: 0668407723
+        <a href="tel:0656207310" class="animate-charcter">
+            قدم طلبك مباشرة عبر الهاتف: c
         </a>
     </div>
 @endsection
@@ -147,7 +147,7 @@
     </div>
 
     <div id="app">
-        <formulaire :product="{'id':'1','prix' : '1000'}">
+        <formulaire :product="{'id':'1','prix' : '2900'}">
 
         </formulaire>
     </div>

@@ -15,7 +15,7 @@
 @section('header-top')
     <div class="header-call">
         <a class="animate-charcter">
-            للإستفسار: 0668407723
+            للإستفسار: 0656207310
         </a>
     </div>
 @endsection

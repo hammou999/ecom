@@ -15,7 +15,7 @@
 @section('header-top')
     <div class="header-call">
         <a class="animate-charcter">
-            قدم طلبك مباشرة عبر الهاتف: 0668407723
+            للإستفسار: 0656207310
         </a>
     </div>
 @endsection

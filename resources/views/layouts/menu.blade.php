@@ -16,7 +16,7 @@
 
 <nav>
     <div class="logo">
-        Brand
+        <img src="{{asset('picture/icon/logo1.svg')}}" />
     </div>
     <input type="checkbox" id="click">
     <label for="click" class="menu-btn">
@@ -42,8 +42,8 @@
                 <div class="col-xl-6 col-lg-6 col-md-6 mb-50" style="text-align: center">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid"
-                                                      alt="logo"></a>
+                            <a href="index.html">
+                                <img src="{{asset('picture/icon/logo1.svg')}}" class="img-fluid" alt="logo"></a>
                         </div>
                         <div class="footer-text">
                             <p> المتجر بوابتك الجديدة للتسوق إلكترونيا بشكل سهل وبسيط.
@@ -61,8 +61,9 @@
                 <div class="col-xl-6 col-lg-6 col-md-6 mb-30 text-center">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid"
-                                                      alt="logo"></a>
+                            <a href="index.html">
+                                <img src="{{asset('picture/icon/livraison-express.png')}}" class="img-fluid" alt="logo">
+                            </a>
                         </div>
                         <div class="footer-widget-heading">
                             <h3>روابط مفيدة</h3>

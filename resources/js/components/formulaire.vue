@@ -162,6 +162,7 @@
 
             selectCommune(selectedIndex) {
                 this.total_pay = parseInt(this.product.prix) + parseInt(this.all_commune[selectedIndex].prix);
+                console.log(this.all_commune)
             },
 
             register() {

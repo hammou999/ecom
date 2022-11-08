@@ -21317,6 +21317,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     selectCommune: function selectCommune(selectedIndex) {
       this.total_pay = parseInt(this.product.prix) + parseInt(this.all_commune[selectedIndex].prix);
+      console.log(this.all_commune);
     },
     register: function register() {
       var _this4 = this;

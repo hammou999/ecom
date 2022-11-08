@@ -16,7 +16,7 @@
 @section('header-top')
     <div class="header-call">
         <a class="animate-charcter">
-            قدم طلبك مباشرة عبر الهاتف: 0668407723
+            الدفع عند الاستلام، توصيل 58 ولاية مرحبا بكم
         </a>
     </div>
 @endsection
